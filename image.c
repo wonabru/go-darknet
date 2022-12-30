@@ -1,4 +1,5 @@
 #include <darknet.h>
+#include <stdint.h>
 
 void fill_image_f32(image* im, int w, int h, int c, float* data) {
     int i;
