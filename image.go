@@ -1,6 +1,7 @@
 package darknet
 
 // #include <stdlib.h>
+// #include <stdint.h>
 // #include "image.h"
 import "C"
 import (
