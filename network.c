@@ -17,7 +17,7 @@ struct network_box_result perform_network_detect(network *n, image *img, int cla
     // mleak at network_predict(), get_network_boxes() and network_predict_ptr()?
     network_predict_ptr(n, sized.data);
     int nboxes = 0;
-    result.detections = get_network_boxes(n, img->w, img->h, thresh, hier_thresh, 0, 1, &result.detections_len, letter_box);
+    result.detections = get_network_boxes(n, img->w, img->h, thresh, hier_thresh, 0, 1, &result.detections_len);
     if (nms) {
         do_nms_sort(result.detections, result.detections_len, classes, nms);
     }
