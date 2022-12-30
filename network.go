@@ -5,7 +5,6 @@ package darknet
 // #include <darknet.h>
 //
 // #include "network.h"
-import "C"
 import (
 	"errors"
 	"time"
